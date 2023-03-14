@@ -21,9 +21,9 @@ const SpecialProduct = () => {
               activeColor="#ffd700"
             />
             <p className="price">
-              <span className="red-p">500 lei</span>
-              &nbsp;
-              <strike>700 lei</strike>
+              <span className="red-p">500 lei </span>
+               &nbsp;
+              <strike> 700 lei</strike>
             </p>
             <div className="discount-till d-flex align-items-center gap-10">
               <p className="mb-0">

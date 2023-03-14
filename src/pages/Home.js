@@ -4,10 +4,12 @@ import Marquee from "react-fast-marquee";
 import BlogCard from "../components/BlogCard";
 import ProductCard from "../components/ProductCard";
 import SpecialProduct from "../components/SpecialProduct";
+import Meta from "../components/Meta";
 
 const Home = () => {
   return (
     <>
+        <Meta title={"Mabin Store"} />
       <section className="home-wrapper-1 py-5">
         <div className="container-xxl">
           <div className="row">
@@ -213,17 +215,93 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className="famous-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/famous-1.webp" className="img-fluid" alt="famous" />
+                <div className="famous-content position-absolute">
+                  <h5>Big Screen</h5>
+                  <h6>Smart Watch Series 7</h6>
+                  <p>
+                    De la 2.449,99 lei
+                    <br />
+                    sau 239lei/luna pentru 1 an
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/famous-2.webp" className="img-fluid" alt="famous" />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Studio Display</h5>
+                  <h6 className="text-dark">600 unitati de luminozitate</h6>
+                  <p className="text-dark">
+                    27 inch 5K Retina Display
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/famous-3.webp" className="img-fluid" alt="famous" />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Smartphone</h5>
+                  <h6 className="text-dark">iPhone 13 Pro</h6>
+                  <p className="text-dark">
+                    De la 3.784,00 lei
+                    <br />
+                    sau 364lei/luna pentru 1 an
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/famous-4.webp" className="img-fluid" alt="famous" />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">home speakers</h5>
+                  <h6 className="text-dark">Sunet Room-filling</h6>
+                  <p className="text-dark">
+                    De la 2.149,00 lei
+                    <br />
+                    sau 211lei/luna pentru 1 an
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="special-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-            <h3 className="section-heading">Produse Speciale</h3>
+              <h3 className="section-heading">Produse Speciale</h3>
             </div>
           </div>
           <div className="row">
             <SpecialProduct />
             <SpecialProduct />
             <SpecialProduct />
+            <SpecialProduct />
+          </div>
+        </div>
+      </section>
+      <section className="popular-wrapper py-5 home-wrapper-2  ">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Produse populare</h3>
+            </div>
+          </div>
+          <div className="row">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
           </div>
         </div>
       </section>
@@ -282,5 +360,3 @@ const Home = () => {
 
 export default Home;
 
-
-//2:30:12 / 10:17:44
