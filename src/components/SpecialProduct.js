@@ -30,9 +30,9 @@ const SpecialProduct = () => {
                 <b>5 </b>zile
               </p>
               <div className="d-flex gap-10 align-items-center">
-                <span className="badge rounded-circle p-2 bg-danger">1</span>:
-                <span className="badge rounded-circle p-2 bg-danger">1</span>:
-                <span className="badge rounded-circle p-2 bg-danger">1</span>
+                <span className="badge rounded-circle p-2 bg-danger">23</span>:
+                <span className="badge rounded-circle p-2 bg-danger">59</span>:
+                <span className="badge rounded-circle p-2 bg-danger">59</span>
               </div>
             </div>
             <div className="prod-count my-3">

@@ -300,8 +300,6 @@ const Home = () => {
           <div className="row">
             <ProductCard />
             <ProductCard />
-            <ProductCard />
-            <ProductCard />
           </div>
         </div>
       </section>
@@ -359,4 +357,3 @@ const Home = () => {
 };
 
 export default Home;
-

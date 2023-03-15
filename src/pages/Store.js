@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import ReactStars from "react-rating-stars-component";
+import ProductCard from "../components/ProductCard";
 
 const Store = () => {
+  const [grid, setGrid] = useState(4);
   return (
     <>
       <Meta title={"Mabin | Magazin"} />
@@ -178,38 +180,76 @@ const Store = () => {
               </div>
             </div>
             <div className="col-9">
-              <div className="filter-sort-grid">
-                <div className="d-flex justify-content-between aling-items-center ">
-                <div className="d-flex align-items-center gap-10">
-                  <p className="mb-0 d-block">Sorteaza dupa:</p>
-                  <select name="" className="form-control form-select" id="">
-                    <option value="manual">Recomandate</option>
-                    <option value="best-selling" selected="selected">
-                      Cele mai vandute
-                    </option>
-                    <option value="title-ascending">Alfabetic, A-Z</option>
-                    <option value="price-ascending">
-                      Pret, Scump - Ieftin
-                    </option>
-                    <option value="price-descending">
-                      Pret, Ieftin - Scump
-                    </option>
-                    <option value="created-ascending">Data, Nou - Vechi</option>
-                    <option value="created-descending">
-                      Data, Vechi - Nou
-                    </option>
-                  </select>
-                </div>
-                </div>
-                <div className="d-flex align-items-center gap-10">
-                <p className="total-products">21 Produse</p>
-                <div className="d-flex align-items-center gap-10">
-                  <img src="images/gr.svg" className="d-block img-fluid" alt="grid" />
-                  <img src="images/gr2.svg" className="d-block img-fluid" alt="grid" />
-                  <img src="images/gr3.svg" className="d-block img-fluid" alt="grid" />
-                  <img src="images/gr4.svg" className="d-block img-fluid" alt="grid" />
+              <div className="filter-sort-grid mb-4">
+                <div className="d-flex justify-content-between align-items-center">
+                  <div className="d-flex align-items-center gap-10">
+                    <p className="mb-0 d-block" style={{ width: "190px" }}>
+                      Sorteaza dupa:
+                    </p>
+                    <select
+                      name=""
+                      defaultValue={"manula"}
+                      className="form-control form-select"
+                      id=""
+                    >
+                      <option value="manual">Recomadate</option>
+                      <option value="best-selling">Cele mai vandute</option>
+                      <option value="title-ascending">
+                        Alfabetic, A-Z
+                      </option>
+                      <option value="title-descending">
+                        Alfabetic, Z-A
+                      </option>
+                      <option value="price-ascending">
+                        Pret, de la ieftin la scump
+                      </option>
+                      <option value="price-descending">
+                        Pret, de la scump la ieftin
+                      </option>
+                      <option value="created-ascending">
+                        Data, de la vechi la nou
+                      </option>
+                      <option value="created-descending">
+                        Data, de la nou la vechi
+                      </option>
+                    </select>
+                  </div>
+                  <div className="d-flex align-items-center gap-10">
+                    <p className="totalproducts mb-0">21 Produse</p>
+                    <div className="d-flex gap-10 align-items-center grid">
+                      <img
+                        onClick={() => {
+                          setGrid(4);
+                        }}
+                        src="images/gr3.svg"
+                        className="d-block img-fluid"
+                        alt="grid"
+                      />
+                      <img
+                        onClick={() => {
+                          setGrid(6);
+                        }}
+                        src="images/gr2.svg"
+                        className="d-block img-fluid"
+                        alt="grid"
+                      />
+
+                      <img
+                        onClick={() => {
+                          setGrid(12);
+                        }}
+                        src="images/gr.svg"
+                        className="d-block img-fluid"
+                        alt="grid"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
+              <div className="products-list pb-5">
+                <div className="flex-wrap d-flex gap-15">
+                  <ProductCard grid={grid}/>
+                </div>
               </div>
             </div>
           </div>
