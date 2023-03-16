@@ -9,7 +9,7 @@ import Meta from "../components/Meta";
 const Home = () => {
   return (
     <>
-        <Meta title={"Mabin Store"} />
+      <Meta title={"Mabin Store"} />
       <section className="home-wrapper-1 py-5">
         <div className="container-xxl">
           <div className="row">
@@ -209,9 +209,6 @@ const Home = () => {
               <h3 className="section-heading">Colecții prezentate</h3>
             </div>
             <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
           </div>
         </div>
       </section>
@@ -220,7 +217,11 @@ const Home = () => {
           <div className="row">
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img src="images/famous-1.webp" className="img-fluid" alt="famous" />
+                <img
+                  src="images/famous-1.webp"
+                  className="img-fluid"
+                  alt="famous"
+                />
                 <div className="famous-content position-absolute">
                   <h5>Big Screen</h5>
                   <h6>Smart Watch Series 7</h6>
@@ -234,19 +235,25 @@ const Home = () => {
             </div>
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img src="images/famous-2.webp" className="img-fluid" alt="famous" />
+                <img
+                  src="images/famous-2.webp"
+                  className="img-fluid"
+                  alt="famous"
+                />
                 <div className="famous-content position-absolute">
                   <h5 className="text-dark">Studio Display</h5>
                   <h6 className="text-dark">600 unitati de luminozitate</h6>
-                  <p className="text-dark">
-                    27 inch 5K Retina Display
-                  </p>
+                  <p className="text-dark">27 inch 5K Retina Display</p>
                 </div>
               </div>
             </div>
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img src="images/famous-3.webp" className="img-fluid" alt="famous" />
+                <img
+                  src="images/famous-3.webp"
+                  className="img-fluid"
+                  alt="famous"
+                />
                 <div className="famous-content position-absolute">
                   <h5 className="text-dark">Smartphone</h5>
                   <h6 className="text-dark">iPhone 13 Pro</h6>
@@ -260,7 +267,11 @@ const Home = () => {
             </div>
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img src="images/famous-4.webp" className="img-fluid" alt="famous" />
+                <img
+                  src="images/famous-4.webp"
+                  className="img-fluid"
+                  alt="famous"
+                />
                 <div className="famous-content position-absolute">
                   <h5 className="text-dark">home speakers</h5>
                   <h6 className="text-dark">Sunet Room-filling</h6>
@@ -345,10 +356,18 @@ const Home = () => {
             <div className="col-12">
               <h3 className="section-heading">Bloguri Recente</h3>
             </div>
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
+            <div className="col-3">
+              <BlogCard />
+            </div>
+            <div className="col-3">
+              <BlogCard />
+            </div>
+            <div className="col-3">
+              <BlogCard />
+            </div>
+            <div className="col-3">
+              <BlogCard />
+            </div>
           </div>
         </div>
       </section>

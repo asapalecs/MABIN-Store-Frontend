@@ -50,7 +50,7 @@ const Header = () => {
             <div className="col-5">
               <div className="header-upper-link d-flex align-items-center justify-content-between">
                 <div>
-                  <Link className="d-flex align-items center gap-10 text-white">
+                  <Link to="/compara-produs" className="d-flex align-items center gap-10 text-white">
                     <img src="images/compare.svg" alt="compare" />
                     <p className="mb-0">
                       Compara <br />
@@ -59,7 +59,7 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items center gap-10 text-white">
+                  <Link to="/favorite" className="d-flex align-items center gap-10 text-white">
                     <img src="images/wishlist.svg" alt="wishlist" />
                     <p className="mb-0">
                       Lista <br />
@@ -68,7 +68,7 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items center gap-10 text-white">
+                  <Link to="/cont" className="d-flex align-items center gap-10 text-white">
                     <img src="images/user.svg" alt="user" />
                     <p className="mb-0">
                       Login <br />
@@ -77,7 +77,7 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items center gap-10 text-white">
+                  <Link to="/cos" className="d-flex align-items center gap-10 text-white">
                     <img src="images/cart.svg" alt="cart" />
                     <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark">0</span>
@@ -133,7 +133,7 @@ const Header = () => {
                   <div className="d-flex align-items-center gap-15">
                     <NavLink to="/">Acasa</NavLink>
                     <NavLink to="store">Magazin</NavLink>
-                    <NavLink to="blogs">Blog</NavLink>
+                    <NavLink to="blog">Blog</NavLink>
                     <NavLink to="contact">Contact</NavLink>
                   </div>
                 </div>
