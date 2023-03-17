@@ -6,7 +6,7 @@ import Meta from "../components/Meta"
 const Blog = () => {
   return (
     <>
-    <Meta title={"Blog"} />
+    <Meta title={"Mabin | Blog"} />
     <BreadCrumb title="Blog" />
     <div className='blog-wrapper home-wrapper-2 py-5'>
         <div className='container-xxl'>

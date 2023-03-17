@@ -8,7 +8,7 @@ import {BsFillInfoCircleFill} from "react-icons/bs"
 const Contact = () => {
   return (
     <>
-      <Meta title={"Contact"} />
+      <Meta title={"Mabin | Contact"} />
       <BreadCrumb title="Contact" />
       <div className="contact-wrapper home-wrapper-2 py-5">
         <div className="container-xxl">

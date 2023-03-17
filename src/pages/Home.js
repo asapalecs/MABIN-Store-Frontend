@@ -9,7 +9,7 @@ import Meta from "../components/Meta";
 const Home = () => {
   return (
     <>
-      <Meta title={"Mabin Store"} />
+      <Meta title={"Mabin"} />
       <section className="home-wrapper-1 py-5">
         <div className="container-xxl">
           <div className="row">
