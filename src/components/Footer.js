@@ -58,11 +58,11 @@ const Footer = () => {
             <div className="col-3">
               <h4 className="text-white mb-4">Informații</h4>
               <div className="footer-links d-flex flex-column">
-                <Link className="text-white py-2 mb-1">Politica de confidențialitate</Link>
-                <Link className="text-white py-2 mb-1">Politica de rambursare</Link>
-                <Link className="text-white py-2 mb-1">Politica de livrare</Link>
-                <Link className="text-white py-2 mb-1">Termeni și condiții</Link>
-                <Link className="text-white py-2 mb-1">Bloguri</Link>
+                <Link to="/confidentialitate" className="text-white py-2 mb-1">Politica de confidențialitate</Link>
+                <Link to="/rambursare" className="text-white py-2 mb-1">Politica de rambursare</Link>
+                <Link to="/livrare" className="text-white py-2 mb-1">Politica de livrare</Link>
+                <Link to="/termeni-conditii" className="text-white py-2 mb-1">Termeni și condiții</Link>
+                <Link to="/blog" className="text-white py-2 mb-1">Bloguri</Link>
               </div>
             </div>
             <div className="col-3">

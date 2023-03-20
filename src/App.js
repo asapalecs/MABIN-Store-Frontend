@@ -12,6 +12,12 @@ import Login from "./pages/Login";
 import Forgotpassword from "./pages/Forgotpassword";
 import Signup from "./pages/Signup";
 import Resetpassword from "./pages/Resetpassword";
+import SingleBlog from "./pages/SingleBlog";
+import Privacy from "./pages/Privacy";
+import Refund from "./pages/Refund";
+import Terms from "./pages/Terms";
+import Shipping from "./pages/Shipping";
+import SingleProduct from "./pages/SingleProduct";
 
 function App() {
   return (
@@ -21,14 +27,20 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="store" element={<Store />} />
+            <Route path="product" element={<Store />} />
+            <Route path="product/:id" element={<SingleProduct />} />
             <Route path="blog" element={<Blog />} />
+            <Route path="blog/:id" element={<SingleBlog />} />
             <Route path="compara-produs" element={<Compare />} />
             <Route path="favorite" element={<Wishlist />} />
             <Route path="login" element={<Login />} />
             <Route path="recuperare-parola" element={<Forgotpassword />} />
             <Route path="inregistrare" element={<Signup />} />
             <Route path="reseteaza-parola" element={<Resetpassword />} />
+            <Route path="confidentialitate" element={<Privacy />} />
+            <Route path="rambursare" element={<Refund />} />
+            <Route path="livrare" element={<Shipping />} />
+            <Route path="termeni-conditii" element={<Terms />} />
           </Route>
         </Routes>
       </BrowserRouter>
@@ -37,3 +49,4 @@ function App() {
 }
 
 export default App;
+
