@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
+import blog from "../images/blog-1.jpg";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 
 const SingleBlog = () => {
@@ -24,7 +25,7 @@ const SingleBlog = () => {
                     Știri noi despre inteligența artificială
                   </h3>
                   <img
-                    src="/images/blog-1.jpg"
+                    src={blog}
                     alt="blog"
                     className="img-fluid w-100 my-4"
                   />

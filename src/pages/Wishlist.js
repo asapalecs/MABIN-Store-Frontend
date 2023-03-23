@@ -26,9 +26,9 @@ const Wishlist = () => {
               </div>
               <div className="py-3 px-3">
                 <h5 className="title">
-                  Honor T1 7.0 1 GB RAM 8 GB ROM 7 Inch With Wi-Fi+3G Tablet
+                  Laptop APPLE MacBook Pro 16, Apple M2 Pro, 16.2" Liquid Retina XDR, 16GB, SSD 512GB
                 </h5>
-                <h6 className="price">$ 100</h6>
+                <h6 className="price">1.529,99 lei</h6>
               </div>
             </div>
           </div>
@@ -48,9 +48,9 @@ const Wishlist = () => {
               </div>
               <div className="py-3 px-3">
                 <h5 className="title">
-                  Honor T1 7.0 1 GB RAM 8 GB ROM 7 Inch With Wi-Fi+3G Tablet
+                  Laptop APPLE MacBook Pro 16, Apple M2 Pro, 16.2" Liquid Retina XDR, 16GB, SSD 512GB
                 </h5>
-                <h6 className="price">$ 100</h6>
+                <h6 className="price">1.529,99 lei</h6>
               </div>
             </div>
           </div>
@@ -70,9 +70,9 @@ const Wishlist = () => {
               </div>
               <div className="py-3 px-3">
                 <h5 className="title">
-                  Honor T1 7.0 1 GB RAM 8 GB ROM 7 Inch With Wi-Fi+3G Tablet
+                  Laptop APPLE MacBook Pro 16, Apple M2 Pro, 16.2" Liquid Retina XDR, 16GB, SSD 512GB
                 </h5>
-                <h6 className="price">$ 100</h6>
+                <h6 className="price">1.529,99 lei</h6>
               </div>
             </div>
           </div>

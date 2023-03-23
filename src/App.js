@@ -18,6 +18,8 @@ import Refund from "./pages/Refund";
 import Terms from "./pages/Terms";
 import Shipping from "./pages/Shipping";
 import SingleProduct from "./pages/SingleProduct";
+import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
             <Route path="product/:id" element={<SingleProduct />} />
             <Route path="blog" element={<Blog />} />
             <Route path="blog/:id" element={<SingleBlog />} />
+            <Route path="cos" element={<Cart />} />
+            <Route path="checkout" element={<Checkout />} />
             <Route path="compara-produs" element={<Compare />} />
             <Route path="favorite" element={<Wishlist />} />
             <Route path="login" element={<Login />} />
@@ -49,4 +53,4 @@ function App() {
 }
 
 export default App;
-
+//7:59:07 / 10:17:44

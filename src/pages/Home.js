@@ -209,6 +209,7 @@ const Home = () => {
               <h3 className="section-heading">Colecții prezentate</h3>
             </div>
             <ProductCard />
+            <ProductCard />
           </div>
         </div>
       </section>
